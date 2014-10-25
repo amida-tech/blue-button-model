@@ -74,7 +74,7 @@
                 "claims": {
                     "type": "array",
                     "items": {
-                        "$ref": "http://local.com/claims"
+                        "$ref": "http://local.com/claim"
                     }
                 },
                 "providers": {
