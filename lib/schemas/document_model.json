@@ -65,12 +65,6 @@
                         "$ref": "http://local.com/vital"
                     }
                 },
-                "insurance": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "http://local.com/insurance"
-                    }
-                },
                 "claims": {
                     "type": "array",
                     "items": {
@@ -93,12 +87,6 @@
                     "type": "array",
                     "items": {
                         "$ref": "http://local.com/family_history"
-                    }
-                },
-                "participants": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "http://local.com/participant"
                     }
                 }
             },
