@@ -11,7 +11,7 @@ var expect = chai.expect;
 
 describe('check valid json\'s', function () {
     var fileToJSON = function (filename) {
-        var directory = path.join(__dirname, '../fixtures/samples');
+        var directory = path.join(__dirname, '../samples/actual');
         var p = path.join(directory, filename);
         var content = fs.readFileSync(p);
         var result = JSON.parse(content);
