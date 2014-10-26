@@ -253,12 +253,6 @@
                     "items": {
                         "$ref": "#/properties/cda_email"
                     }
-                },
-                "phone": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/properties/cda_phone"
-                    }
                 }
             },
             "additionalProperties": false
@@ -304,7 +298,10 @@
                     }
                 },
                 "code": {
-                    "ref": "#/properties/cda_coded_entry"
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_coded_entry"
+                    }
                 }
             },
             "additionalProperties": false
