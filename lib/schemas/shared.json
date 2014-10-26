@@ -45,6 +45,9 @@
                 },
                 "high": {
                     "$ref": "http://local.com/common_models#/properties/cda_date_element"
+                },
+                "center": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date_element"
                 }
             },
             "additionalProperties": false,

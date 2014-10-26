@@ -41,7 +41,7 @@
                 "plan_of_care": {
                     "type": "array",
                     "items": {
-                        "$ref": "http://local.com/plan_of_care"
+                        "$ref": "http://local.com/plan_of_care_entry"
                     }
                 },
                 "procedures": {
