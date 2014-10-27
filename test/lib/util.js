@@ -11,3 +11,15 @@ exports.codeToPath = function (errors) {
         return result;
     }, {});
 };
+
+exports.arrayLocations = function (errors) {
+    return errors.reduce(function (result, error) {
+        var path = error.path;
+        var index = Number(path.charAt(3));
+        if (result.indexOf(index) < 0) {
+            result.push(index);
+            result.sort();
+        }
+        return result;
+    }, []);
+};
