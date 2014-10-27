@@ -59,6 +59,9 @@
                 "social_history": {
                     "$ref": "http://local.com/social_history"
                 },
+                "payers": {
+                    "$ref": "http://local.com/payers"
+                },
                 "vitals": {
                     "type": "array",
                     "items": {

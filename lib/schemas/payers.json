@@ -151,8 +151,7 @@
         },
         "required": [
             "policy",
-            "participant",
-            "authorization"
+            "participant"
         ],
         "additionalProperties": false
     }

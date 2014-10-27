@@ -24,7 +24,6 @@ describe('check valid json\'s', function () {
 
         var err = bbm.validator.getLastError();
         if (!err.valid) {
-
             var _ = require("underscore");
 
             var count = function (numbers) {
@@ -42,7 +41,7 @@ describe('check valid json\'s', function () {
                 })
                 .value();
 
-            console.log("Errors: \n", JSON.stringify(bb.validator.getLastError(), null, 4));
+            console.log("Errors: \n", JSON.stringify(bbm.validator.getLastError(), null, 4));
             console.log("Errors summary: \n ", JSON.stringify(result, null, 4));
         }
 
