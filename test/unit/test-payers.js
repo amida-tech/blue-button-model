@@ -11,19 +11,19 @@ var expect = chai.expect;
 
 describe('payers unit tests', function () {
     it('sample valid_0', function () {
-        bbm.validator.validateSectionObj(samples.valid_0, 'payers');
+        bbm.validator.validateComponent(samples.valid_0, 'payers');
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.true;
     });
 
     it('sample valid_1', function () {
-        bbm.validator.validateSectionObj(samples.valid_1, 'payers');
+        bbm.validator.validateComponent(samples.valid_1, 'payers');
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.true;
     });
 
     it('sample invalid_0', function () {
-        bbm.validator.validateSectionObj(samples.invalid_0, 'payers');
+        bbm.validator.validateComponent(samples.invalid_0, 'payers');
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(3);

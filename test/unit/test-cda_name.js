@@ -11,13 +11,13 @@ var expect = chai.expect;
 
 describe('cda_name unit tests', function () {
     it('sample cda_name_0', function () {
-        bbm.validator.validateSectionObj(samples.valid_0, 'cda_name');
+        bbm.validator.validateComponent(samples.valid_0, 'cda_name');
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.true;
     });
 
     it('sample invalid_0', function () {
-        bbm.validator.validateSectionObj(samples.invalid_0, 'cda_name');
+        bbm.validator.validateComponent(samples.invalid_0, 'cda_name');
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(2);
