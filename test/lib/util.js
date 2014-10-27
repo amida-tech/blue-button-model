@@ -23,3 +23,16 @@ exports.arrayLocations = function (errors) {
         return result;
     }, []);
 };
+
+exports.errorsToPathComponents = function (errors, componentIndex) {
+    return errors.reduce(function (result, error) {
+        var path = error.path;
+        var components = path.split('/');
+        var component = (components.length <= componentIndex) ? '*' : components[componentIndex];
+        if (result.indexOf(component) < 0) {
+            result.push(component);
+            result.sort();
+        }
+        return result;
+    }, []);
+};
