@@ -1,7 +1,7 @@
 blue-button-model
 =================
 
-Blue Button Model Validation
+Blue Button Model Definition and Validation
 
 [![NPM](https://nodei.co/npm/blue-button-model.png)](https://nodei.co/npm/blue-button-model/)
 
@@ -24,3 +24,15 @@ if (!valid) {
     console.log(error);
 }
 ```
+
+## Data Model
+
+Data model is documented [here](./docs/model.md).  All parsers in [blue-button](https://github.com/amida-tech/blue-button) generate data that follow this model.
+
+## Implementation
+
+Some notes on implementation are included [here](./docs/validator.md).
+
+## License
+
+Licensed under [Apache 2.0](./LICENSE)
