@@ -35,4 +35,4 @@ Some notes on implementation are included [here](./docs/validator.md).
 
 ## License
 
-Licensed under [Apache 2.0](./LICENSE)
+Licensed under [Apache 2.0](./LICENSE).
