@@ -35,7 +35,7 @@ describe('cda_date unit tests', function () {
         expect(result.errors).to.have.length(1);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_PROPERTIES_MINIMUM).to.have.length(1);
-        expect(c2p.OBJECT_PROPERTIES_MINIMUM[0]).to.equal("#/cda_date");
+        expect(c2p.OBJECT_PROPERTIES_MINIMUM[0]).to.equal("#/");
     });
 
     it('sample invalid_1', function () {
@@ -45,7 +45,7 @@ describe('cda_date unit tests', function () {
         expect(result.errors).to.have.length(1);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/cda_date");
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/");
     });
 
     it('sample invalid_2', function () {
@@ -55,8 +55,8 @@ describe('cda_date unit tests', function () {
         expect(result.errors).to.have.length(2);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_REQUIRED).to.have.length(1);
-        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/cda_date/low");
+        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/low");
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/cda_date/high");
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/high");
     });
 });

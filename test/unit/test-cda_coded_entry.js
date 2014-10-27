@@ -29,7 +29,7 @@ describe('cda_coded_entry unit tests', function () {
         expect(result.errors).to.have.length(1);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_PROPERTIES_MINIMUM).to.have.length(1);
-        expect(c2p.OBJECT_PROPERTIES_MINIMUM[0]).to.equal("#/cda_coded_entry");
+        expect(c2p.OBJECT_PROPERTIES_MINIMUM[0]).to.equal("#/");
     });
 
     it('sample invalid_1', function () {
@@ -39,8 +39,8 @@ describe('cda_coded_entry unit tests', function () {
         expect(result.errors).to.have.length(2);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/cda_coded_entry");
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/");
         expect(c2p.INVALID_TYPE).to.have.length(1);
-        expect(c2p.INVALID_TYPE[0]).to.equal("#/cda_coded_entry/translations");
+        expect(c2p.INVALID_TYPE[0]).to.equal("#/translations");
     });
 });

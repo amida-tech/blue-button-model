@@ -27,7 +27,7 @@ describe('cda_location unit tests', function () {
         expect(result.errors).to.have.length(1);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_REQUIRED).to.have.length(1);
-        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/cda_location");
+        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/");
     });
 
     it('sample invalid_1', function () {
@@ -37,8 +37,8 @@ describe('cda_location unit tests', function () {
         expect(result.errors).to.have.length(3);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.INVALID_TYPE).to.have.length(2);
-        expect(c2p.INVALID_TYPE).to.deep.equal(["#/cda_location/address", "#/cda_location/phone"]);
+        expect(c2p.INVALID_TYPE).to.deep.equal(["#/address", "#/phone"]);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/cda_location");
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/");
     });
 });

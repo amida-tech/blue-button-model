@@ -29,7 +29,7 @@ describe('cda_email unit tests', function () {
         expect(result.errors).to.have.length(1);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_REQUIRED).to.have.length(1);
-        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/cda_email");
+        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/");
     });
 
     it('sample invalid_1', function () {
@@ -39,6 +39,6 @@ describe('cda_email unit tests', function () {
         expect(result.errors).to.have.length(1);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/cda_email");
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/");
     });
 });

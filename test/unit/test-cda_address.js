@@ -29,10 +29,10 @@ describe('cda_address unit tests', function () {
         expect(result.errors).to.have.length(3);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_REQUIRED).to.have.length(1);
-        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/cda_address");
+        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/");
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/cda_address");
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/");
         expect(c2p.INVALID_TYPE).to.have.length(1);
-        expect(c2p.INVALID_TYPE[0]).to.equal("#/cda_address/street_lines");
+        expect(c2p.INVALID_TYPE[0]).to.equal("#/street_lines");
     });
 });
