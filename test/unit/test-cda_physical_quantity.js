@@ -21,7 +21,7 @@ describe('cda_physical_quantity unit tests', function () {
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(2);
-        var c2p = util.codeToPath(result.errors);
+        var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_REQUIRED).to.have.length(2);
         expect(c2p.OBJECT_REQUIRED).to.deep.equal(["#/cda_physical_quantity", "#/cda_physical_quantity"]);
     });
@@ -31,7 +31,7 @@ describe('cda_physical_quantity unit tests', function () {
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(1);
-        var c2p = util.codeToPath(result.errors);
+        var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_REQUIRED).to.have.length(1);
         expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/cda_physical_quantity");
     });
@@ -41,7 +41,7 @@ describe('cda_physical_quantity unit tests', function () {
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(1);
-        var c2p = util.codeToPath(result.errors);
+        var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_REQUIRED).to.have.length(1);
         expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/cda_physical_quantity");
     });
@@ -51,7 +51,7 @@ describe('cda_physical_quantity unit tests', function () {
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(1);
-        var c2p = util.codeToPath(result.errors);
+        var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/cda_physical_quantity");
     });

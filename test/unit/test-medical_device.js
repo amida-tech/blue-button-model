@@ -27,7 +27,7 @@ describe('medical_device unit tests', function () {
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(2);
-        var c2p = util.codeToPath(result.errors);
+        var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.ARRAY_LENGTH_SHORT).to.have.length(1);
         expect(c2p.ARRAY_LENGTH_SHORT[0]).to.equal("#/identifiers");
         expect(c2p.INVALID_TYPE).to.have.length(1);

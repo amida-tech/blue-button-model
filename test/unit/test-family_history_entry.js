@@ -27,7 +27,7 @@ describe('family_history_entry unit tests', function () {
         var result = bbm.validator.getLastError();
         expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(3);
-        var c2p = util.codeToPath(result.errors);
+        var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/");
         expect(c2p.OBJECT_REQUIRED).to.have.length(1);
