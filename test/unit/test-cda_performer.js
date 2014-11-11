@@ -11,27 +11,24 @@ var expect = chai.expect;
 
 describe('cda_performer unit tests', function () {
     it('sample valid_0', function () {
-        bbm.validator.validateComponent(samples.valid_0, 'cda_performer');
-        var result = bbm.validator.getLastError();
-        expect(result.valid).to.be.true;
+        var valid = bbm.validator.validateComponent(samples.valid_0, 'cda_performer');
+        expect(valid).to.be.true;
     });
 
     it('sample valid_1', function () {
-        bbm.validator.validateComponent(samples.valid_1, 'cda_performer');
-        var result = bbm.validator.getLastError();
-        expect(result.valid).to.be.true;
+        var valid = bbm.validator.validateComponent(samples.valid_1, 'cda_performer');
+        expect(valid).to.be.true;
     });
 
     it('sample valid_2', function () {
-        bbm.validator.validateComponent(samples.valid_2, 'cda_performer');
-        var result = bbm.validator.getLastError();
-        expect(result.valid).to.be.true;
+        var valid = bbm.validator.validateComponent(samples.valid_2, 'cda_performer');
+        expect(valid).to.be.true;
     });
 
     it('sample invalid_0', function () {
-        bbm.validator.validateComponent(samples.invalid_0, 'cda_performer');
+        var valid = bbm.validator.validateComponent(samples.invalid_0, 'cda_performer');
+        expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(3);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);

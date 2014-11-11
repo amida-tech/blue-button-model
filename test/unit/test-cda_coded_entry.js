@@ -11,21 +11,19 @@ var expect = chai.expect;
 
 describe('cda_coded_entry unit tests', function () {
     it('sample cda_date_0', function () {
-        bbm.validator.validateComponent(samples.valid_0, 'cda_coded_entry');
-        var result = bbm.validator.getLastError();
-        expect(result.valid).to.be.true;
+        var valid = bbm.validator.validateComponent(samples.valid_0, 'cda_coded_entry');
+        expect(valid).to.be.true;
     });
 
     it('sample valid_1', function () {
-        bbm.validator.validateComponent(samples.valid_1, 'cda_coded_entry');
-        var result = bbm.validator.getLastError();
-        expect(result.valid).to.be.true;
+        var valid = bbm.validator.validateComponent(samples.valid_1, 'cda_coded_entry');
+        expect(valid).to.be.true;
     });
 
     it('sample invalid_0', function () {
-        bbm.validator.validateComponent(samples.invalid_0, 'cda_coded_entry');
+        var valid = bbm.validator.validateComponent(samples.invalid_0, 'cda_coded_entry');
+        expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(1);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_PROPERTIES_MINIMUM).to.have.length(1);
@@ -33,9 +31,9 @@ describe('cda_coded_entry unit tests', function () {
     });
 
     it('sample invalid_1', function () {
-        bbm.validator.validateComponent(samples.invalid_1, 'cda_coded_entry');
+        var valid = bbm.validator.validateComponent(samples.invalid_1, 'cda_coded_entry');
+        expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result.valid).to.be.false;
         expect(result.errors).to.have.length(2);
         var c2p = util.errorsToCodePathMap(result.errors);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);

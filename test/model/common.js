@@ -14,5 +14,4 @@ exports.validateSample = function (sampleJSON) {
         console.log(JSON.stringify(result, undefined, 2));
     }
     expect(valid).to.be.true;
-    expect(result.valid).to.be.true;
 };

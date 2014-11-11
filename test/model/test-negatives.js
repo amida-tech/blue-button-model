@@ -41,9 +41,8 @@ describe('find errors', function () {
             var original = sampleJSON.data[sectionName];
             sampleJSON.data[sectionName] = invalidSections[sectionName];
             var valid = bbm.validator.validateDocumentModel(sampleJSON);
-            var result = bbm.validator.getLastError();
             expect(valid).to.be.false;
-            expect(result.valid).to.be.false;
+            var result = bbm.validator.getLastError();
             var components = util.errorsToPathComponents(result.errors, 2);
             expect(components).to.have.length(1);
             expect(components[0]).to.equal(sectionName);
