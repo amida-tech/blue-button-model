@@ -19,7 +19,7 @@ describe('providers section tests', function () {
         var valid = bbm.validator.validateSection(samples.invalid_0, 'providers');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        var al = util.errorsToArrayIndices(result.errors);
+        var al = util.errorsToArrayIndices(result);
         expect(al).to.deep.equal([2, 3]);
     });
 });

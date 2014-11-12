@@ -24,8 +24,8 @@ describe('vital unit tests', function () {
         var valid = bbm.validator.validateComponent(samples.invalid_0, 'vital');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result.errors).to.have.length(2);
-        var c2p = util.errorsToCodePathMap(result.errors);
+        expect(result).to.have.length(2);
+        var c2p = util.errorsToCodePathMap(result);
         expect(c2p.INVALID_TYPE).to.have.length(2);
         expect(c2p.INVALID_TYPE).to.deep.equal(["#/interpretations", "#/status"]);
     });

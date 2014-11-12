@@ -26,7 +26,7 @@ exports.errorsToCodePathMap = function (errors) {
 exports.errorsToArrayIndices = function (errors) {
     return errors.reduce(function (result, error) {
         var path = error.path;
-        var arrayIndex = Number(path.charAt(3));
+        var arrayIndex = Number(path.charAt(2));
         if (result.indexOf(arrayIndex) < 0) {
             result.push(arrayIndex);
             result.sort();

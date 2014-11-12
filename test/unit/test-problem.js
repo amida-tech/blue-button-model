@@ -24,8 +24,8 @@ describe('problem unit tests', function () {
         var valid = bbm.validator.validateComponent(samples.invalid_0, 'problem');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result.errors).to.have.length(2);
-        var c2p = util.errorsToCodePathMap(result.errors);
+        expect(result).to.have.length(2);
+        var c2p = util.errorsToCodePathMap(result);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/problem/date_time/high");
         expect(c2p.INVALID_TYPE).to.have.length(1);

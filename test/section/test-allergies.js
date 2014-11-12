@@ -19,7 +19,15 @@ describe('allergies section tests', function () {
         var valid = bbm.validator.validateSection(samples.invalid_0, 'allergies');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        var al = util.errorsToArrayIndices(result.errors);
-        expect(al).to.deep.equal([1, 3]);
+        var al = util.errorsToArrayIndices(result);
+        expect(al).to.deep.equal([1]);
+    });
+
+    it('sample invalid_1', function () {
+        var valid = bbm.validator.validateSection(samples.invalid_1, 'allergies');
+        expect(valid).to.be.false;
+        var result = bbm.validator.getLastError();
+        var al = util.errorsToArrayIndices(result);
+        expect(al).to.deep.equal([3]);
     });
 });

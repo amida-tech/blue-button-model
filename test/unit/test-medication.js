@@ -24,12 +24,10 @@ describe('medication unit tests', function () {
         var valid = bbm.validator.validateComponent(samples.invalid_0, 'medication');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result.errors).to.have.length(4);
-        var c2p = util.errorsToCodePathMap(result.errors);
-        expect(c2p.OBJECT_REQUIRED).to.have.length(1);
-        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/product");
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/supply");
+        expect(result).to.have.length(3);
+        var c2p = util.errorsToCodePathMap(result);
+        expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY).to.have.length(1);
+        expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY[0]).to.equal("#/product");
         expect(c2p.OBJECT_PROPERTIES_MINIMUM).to.have.length(1);
         expect(c2p.OBJECT_PROPERTIES_MINIMUM[0]).to.equal("#/date_time");
         expect(c2p.INVALID_TYPE).to.have.length(1);

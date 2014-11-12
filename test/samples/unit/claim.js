@@ -210,7 +210,7 @@ samples.invalid_0 = {
     ],
     "number": "1234567890000",
     "date_time": {
-        "loww": {
+        "low": {
             "date": "2012-10-18T00:00:00Z",
             "precision": "day"
         }

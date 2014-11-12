@@ -15,5 +15,12 @@ samples.invalid_0 = [
     allergy.valid_0,
     allergy.invalid_0,
     allergy.valid_1,
+    allergy.valid_1
+];
+
+samples.invalid_1 = [
+    allergy.valid_0,
+    allergy.valid_0,
+    allergy.valid_1,
     allergy.invalid_1
 ];

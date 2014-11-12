@@ -169,6 +169,26 @@ samples.invalid_0 = {
         "value": 135,
         "unit": "mg/dL",
         "provider": "Joe Doe"
+    }]
+};
+
+samples.invalid_1 = {
+    "result_set": {
+        "name": "Glucose Level"
+    },
+    "results": [{
+        "date_time": {
+            "point": {
+                "date": "2008-03-21T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "result": {
+            "name": "FBS"
+        },
+        "status": "completed",
+        "value": 135,
+        "unit": "mg/dL"
     }, {
         "date_time": {
             "point": {
@@ -181,7 +201,14 @@ samples.invalid_0 = {
         },
         "value": 135,
         "unit": "mg/dL"
-    }, {
+    }]
+};
+
+samples.invalid_2 = {
+    "result_set": {
+        "name": "Glucose Level"
+    },
+    "results": [{
         "date_time": {
             "point": {
                 "date": "2008-03-21T00:00:00Z",

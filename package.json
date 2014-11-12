@@ -26,7 +26,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "z-schema": "^2.4.8"
+    "z-schema": "^3.1.2"
   },
   "devDependencies": {
     "chai": "1.8.x",

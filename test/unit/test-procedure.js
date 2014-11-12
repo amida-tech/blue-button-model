@@ -24,23 +24,33 @@ describe('procedure unit tests', function () {
         var valid = bbm.validator.validateComponent(samples.invalid_0, 'procedure');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result.errors).to.have.length(3);
-        var c2p = util.errorsToCodePathMap(result.errors);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.deep.equal(["#/specimen"]);
-        expect(c2p.OBJECT_REQUIRED).to.have.length(2);
-        expect(c2p.OBJECT_REQUIRED).to.deep.equal(["#/", "#/date_time/point"]);
+        expect(result).to.have.length(2);
+        var c2p = util.errorsToCodePathMap(result);
+        expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY).to.have.length(2);
+        expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY).to.deep.equal(["#/", "#/date_time/point"]);
     });
 
     it('sample invalid_1', function () {
         var valid = bbm.validator.validateComponent(samples.invalid_1, 'procedure');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result.errors).to.have.length(3);
-        var c2p = util.errorsToCodePathMap(result.errors);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(2);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.deep.equal(["#/", "#/specimen"]);
-        expect(c2p.OBJECT_REQUIRED).to.have.length(1);
-        expect(c2p.OBJECT_REQUIRED).to.deep.equal(["#/date_time/point"]);
+        expect(result).to.have.length(2);
+        var c2p = util.errorsToCodePathMap(result);
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.deep.equal(["#/"]);
+        expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY).to.have.length(1);
+        expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY).to.deep.equal(["#/date_time/point"]);
+    });
+
+    it('sample invalid_2', function () {
+        var valid = bbm.validator.validateComponent(samples.invalid_2, 'procedure');
+        expect(valid).to.be.false;
+        var result = bbm.validator.getLastError();
+        expect(result).to.have.length(2);
+        var c2p = util.errorsToCodePathMap(result);
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.deep.equal(["#/specimen"]);
+        expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY).to.have.length(1);
+        expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY).to.deep.equal(["#/date_time/point"]);
     });
 });

@@ -24,11 +24,31 @@ describe('provider unit tests', function () {
         var valid = bbm.validator.validateComponent(samples.invalid_0, 'provider');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result.errors).to.have.length(3);
-        var c2p = util.errorsToCodePathMap(result.errors);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(2);
-        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.deep.equal(["#/", "#/name"]);
+        expect(result).to.have.length(2);
+        var c2p = util.errorsToCodePathMap(result);
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.deep.equal(["#/"]);
         expect(c2p.INVALID_TYPE).to.have.length(1);
         expect(c2p.INVALID_TYPE[0]).to.equal("#/organization");
+    });
+
+    it('sample invalid_1', function () {
+        var valid = bbm.validator.validateComponent(samples.invalid_1, 'provider');
+        expect(valid).to.be.false;
+        var result = bbm.validator.getLastError();
+        expect(result).to.have.length(1);
+        var c2p = util.errorsToCodePathMap(result);
+        expect(c2p.INVALID_TYPE).to.have.length(1);
+        expect(c2p.INVALID_TYPE[0]).to.equal("#/organization");
+    });
+
+    it('sample invalid_2', function () {
+        var valid = bbm.validator.validateComponent(samples.invalid_2, 'provider');
+        expect(valid).to.be.false;
+        var result = bbm.validator.getLastError();
+        expect(result).to.have.length(1);
+        var c2p = util.errorsToCodePathMap(result);
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
+        expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.deep.equal(["#/name"]);
     });
 });
