@@ -165,8 +165,34 @@ samples.invalid_0 = {
         "result": {
             "name": "FBS"
         },
-        "value": "135",
+        "status": "completed",
+        "value": 135,
         "unit": "mg/dL",
         "provider": "Joe Doe"
-    }, ]
+    }, {
+        "date_time": {
+            "point": {
+                "date": "2008-03-21T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "result": {
+            "name": "FBS"
+        },
+        "value": 135,
+        "unit": "mg/dL"
+    }, {
+        "date_time": {
+            "point": {
+                "date": "2008-03-21T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "result": {
+            "name": "FBS"
+        },
+        "status": "completed",
+        "value": "135",
+        "unit": "mg/dL"
+    }]
 };

@@ -36,6 +36,15 @@ samples.invalid_0 = {
         "name": "Colonoscopy",
         "code": "73761001",
         "code_system_name": "SNOMED CT"
+    }
+};
+
+samples.invalid_1 = {
+    "plan": {
+        "name": "Colonoscopy",
+        "code": "73761001",
+        "code_system_name": "SNOMED CT"
     },
+    "type": "procedure",
     "other": "na"
 };

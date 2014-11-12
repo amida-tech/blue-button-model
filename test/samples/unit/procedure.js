@@ -95,7 +95,28 @@ samples.valid_1 = {
 };
 
 samples.invalid_0 = {
-    "proc": {
+    "status": "Aborted",
+    "date_time": {
+        "point": {
+            "precision": "day"
+        }
+    },
+    "specimen": {
+        "identifiers": [{
+            "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58683"
+        }],
+        "code": {
+            "name": "colonic polyp sample",
+            "code": "309226005",
+            "code_system_name": "SNOMED CT"
+        },
+        "type": "liquid"
+    },
+    "procedure_type": "observation"
+};
+
+samples.invalid_1 = {
+    "procedure": {
         "name": "Colonic polypectomy",
         "code": "274025005",
         "code_system_name": "SNOMED CT"
@@ -117,5 +138,6 @@ samples.invalid_0 = {
         },
         "type": "liquid"
     },
-    "procedure_type": "observation"
+    "procedure_type": "observation",
+    "other": "na"
 };

@@ -29,8 +29,8 @@ describe('result unit tests', function () {
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES[0]).to.equal("#/results/[0]");
         expect(c2p.OBJECT_REQUIRED).to.have.length(1);
-        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/results/[0]");
+        expect(c2p.OBJECT_REQUIRED[0]).to.equal("#/results/[1]");
         expect(c2p.INVALID_TYPE).to.have.length(1);
-        expect(c2p.INVALID_TYPE[0]).to.equal("#/results/[0]/value");
+        expect(c2p.INVALID_TYPE[0]).to.equal("#/results/[2]/value");
     });
 });
