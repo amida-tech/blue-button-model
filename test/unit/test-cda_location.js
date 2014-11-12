@@ -9,17 +9,17 @@ var expect = chai.expect;
 
 describe('cda_location unit tests', function () {
     it('sample cda_location_0', function () {
-        var valid = bbm.validator.validateComponent(samples.valid_0, 'cda_location');
+        var valid = bbm.validator.validate(samples.valid_0, 'cda_location');
         expect(valid).to.be.true;
     });
 
     it('sample cda_location_1', function () {
-        var valid = bbm.validator.validateComponent(samples.valid_1, 'cda_location');
+        var valid = bbm.validator.validate(samples.valid_1, 'cda_location');
         expect(valid).to.be.true;
     });
 
     it('sample invalid_0', function () {
-        var valid = bbm.validator.validateComponent(samples.invalid_0, 'cda_location');
+        var valid = bbm.validator.validate(samples.invalid_0, 'cda_location');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
         expect(result).to.have.length(1);
@@ -29,7 +29,7 @@ describe('cda_location unit tests', function () {
     });
 
     it('sample invalid_1', function () {
-        var valid = bbm.validator.validateComponent(samples.invalid_1, 'cda_location');
+        var valid = bbm.validator.validate(samples.invalid_1, 'cda_location');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
         expect(result).to.have.length(3);

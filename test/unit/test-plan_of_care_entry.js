@@ -11,17 +11,17 @@ var expect = chai.expect;
 
 describe('plan_of_care_entry unit tests', function () {
     it('sample valid_0', function () {
-        var valid = bbm.validator.validateComponent(samples.valid_0, 'plan_of_care_entry');
+        var valid = bbm.validator.validate(samples.valid_0, 'plan_of_care_entry');
         expect(valid).to.be.true;
     });
 
     it('sample valid_1', function () {
-        var valid = bbm.validator.validateComponent(samples.valid_1, 'plan_of_care_entry');
+        var valid = bbm.validator.validate(samples.valid_1, 'plan_of_care_entry');
         expect(valid).to.be.true;
     });
 
     it('sample invalid_0', function () {
-        var valid = bbm.validator.validateComponent(samples.invalid_0, 'plan_of_care_entry');
+        var valid = bbm.validator.validate(samples.invalid_0, 'plan_of_care_entry');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
         expect(result).to.have.length(1);
@@ -31,7 +31,7 @@ describe('plan_of_care_entry unit tests', function () {
     });
 
     it('sample invalid_1', function () {
-        var valid = bbm.validator.validateComponent(samples.invalid_1, 'plan_of_care_entry');
+        var valid = bbm.validator.validate(samples.invalid_1, 'plan_of_care_entry');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
         expect(result).to.have.length(1);
