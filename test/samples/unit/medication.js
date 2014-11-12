@@ -217,8 +217,7 @@ samples.invalid_0 = {
                 "last": "Seven",
                 "first": "Henry"
             }
-        },
-        "extra": "na"
+        }
     },
     "administration": {
         "route": {

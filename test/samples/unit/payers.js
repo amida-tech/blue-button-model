@@ -282,7 +282,6 @@ samples.invalid_0 = [{
             "code_system_name": "HL7 RoleCode"
         },
         "insurance": {
-            "type": "medicare",
             "code": {
                 "code": "PAYOR",
                 "code_system_name": "HL7 RoleCode"

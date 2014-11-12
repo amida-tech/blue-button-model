@@ -63,7 +63,9 @@ samples.invalid_0 = [{
     "code": {
         "name": "Smoking Status"
     },
-}, {
+}];
+
+samples.invalid_1 = [{
     "code": {
         "name": "Tobacco use and exposure",
         "code": "229819007",

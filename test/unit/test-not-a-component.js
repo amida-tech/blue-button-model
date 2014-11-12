@@ -11,7 +11,7 @@ describe('sanity checks', function () {
         var dummy = {
             "value": "dummy"
         };
-        var valid = bbm.validator.validateComponent(dummy, 'not-a-component');
+        var valid = bbm.validator.validate(dummy, 'not-a-component');
         expect(valid).to.be.false;
     });
 });

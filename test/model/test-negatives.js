@@ -43,7 +43,7 @@ describe('find errors', function () {
             var valid = bbm.validator.validateDocumentModel(sampleJSON);
             expect(valid).to.be.false;
             var result = bbm.validator.getLastError();
-            var components = util.errorsToPathComponents(result.errors, 2);
+            var components = util.errorsToPathComponents(result, 2);
             expect(components).to.have.length(1);
             expect(components[0]).to.equal(sectionName);
             sampleJSON.data[sectionName] = original;

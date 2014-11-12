@@ -37,7 +37,7 @@ samples.valid_1 = {
 
 samples.invalid_0 = {
     "name": {
-        "given": "Jane",
+        "first": "Jane",
         "last": "Doe"
     },
     "type": {
@@ -45,4 +45,25 @@ samples.invalid_0 = {
     },
     "organization": "PCC",
     "validstate": "OR"
+};
+
+samples.invalid_1 = {
+    "name": {
+        "first": "Jane",
+        "last": "Doe"
+    },
+    "type": {
+        "name": "PHY"
+    },
+    "organization": "PCC"
+};
+
+samples.invalid_2 = {
+    "name": {
+        "given": "Jane",
+        "last": "Doe"
+    },
+    "type": {
+        "name": "PHY"
+    }
 };
