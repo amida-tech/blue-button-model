@@ -8,7 +8,7 @@ Blue Button Model Definition and Validation
 [![Build Status](https://travis-ci.org/amida-tech/blue-button-model.svg)](https://travis-ci.org/amida-tech/blue-button-model)
 [![Coverage Status](https://coveralls.io/repos/amida-tech/blue-button-model/badge.png)](https://coveralls.io/r/amida-tech/blue-button-model)
 
-This library defines a JSON Blue Button health data model. All parsers in [blue-button](https://github.com/amida-tech/blue-button) library generate data that follow this model.  The schema can be found [here](http://developers.amida-tech.com/document_model.html) or programmatically [here](#schemaListMethod).  The implementation uses [zschema](https://github.com/zaggino/z-schema).
+This library defines a JSON Blue Button health data model. All parsers in [blue-button](https://github.com/amida-tech/blue-button) library generate data that follow this model.  The schema can be found [here](http://developers.amida-tech.com/document_model.html) or programmatically [here](#schemaListMethod).  The implementation uses [z-schema](https://github.com/zaggino/z-schema).
 
 ## Usage
 
@@ -45,12 +45,12 @@ Validates individual components in the Blue Button document such as sections and
 __ARGUMENTS__
 
 * `obj` - Component in the JSON health data document.
-* `schemaName` - Type of `obj` to select the schema to validate with.  You can use `id` property of any schema avaiable in the [list](#schemaListMethod).
+* `schemaName` - Type of `obj`.  You can use `id` property of any schema avaiable in the [list](#schemaListMethod).
 * returns - `true` or `false`. 
 
 ### validator.getLastError()
 
-If validation fails this method returns the details of the errors.  The error object is actually an array of errors directly provided by the underlying library [zschema](https://github.com/zaggino/z-schema).
+If validation fails this method returns the details of the errors.  The error object is actually an array of errors and directly provided by the underlying library [zschema](https://github.com/zaggino/z-schema).
 
 <a name="schemaListMethod" />
 ### schemas.list(expandCommon)
