@@ -40,7 +40,7 @@ __Arguments__
 
 ### validator.validate(obj, schemaName)
 
-Validates individual components in the Blue Button document such as sections and entries.
+Validates individual components in Blue Button documents such as sections and entries.
 
 __Arguments__
 
@@ -50,12 +50,12 @@ __Arguments__
 
 ### validator.getLastError()
 
-If validation fails this method returns the details of the errors.  The error object is actually an array of errors and directly provided by the underlying library [zschema](https://github.com/zaggino/z-schema).
+If validation fails this method returns the details of the errors.  The error object is actually an array of errors and directly provided by the underlying library [z-schema](https://github.com/zaggino/z-schema).
 
 <a name="schemaListMethod" />
 ### schemas.list(expandCommon)
 
-Provides the list of raw schemas that are used in the model.  The list includes section schemas, entry schemas and common component schemas.  Document schema is also available with id `document_model`.
+Provides the list of schemas that are used in the model.  The list includes section schemas, entry schemas and common component schemas.  Full document schema is also available with id `document_model`.
 
 __Arguments__
 
@@ -64,7 +64,7 @@ __Arguments__
 
 ### schemas.map(expandCommon)
 
-Similar to [list](#schemaListMethod) but provides a map of schema ids (name) to schemas.  If `expandCommon` is falsy, the array of common component schemas are provided with 'common_models' key.
+Similar to [list](#schemaListMethod) but provides a map of schema ids (name) to schemas.  If `expandCommon` is falsy, the array of common component schemas are provided with `common_models` key.
 
 ## License
 
