@@ -4,6 +4,7 @@ var chai = require('chai');
 
 var bbm = require('../../index.js');
 
+var util = require('../lib/util');
 var samples = require('../samples/section/payers');
 
 var expect = chai.expect;
@@ -18,5 +19,7 @@ describe('payers section tests', function () {
         var valid = bbm.validator.validate(samples.invalid_0, 'payers');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
+        var al = util.errorsToArrayIndices(result);
+        expect(al).to.deep.equal([1]);
     });
 });

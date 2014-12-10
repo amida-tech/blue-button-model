@@ -4,7 +4,7 @@ var samples = {};
 
 module.exports = samples;
 
-samples.valid_0 = [{
+samples.valid_0 = {
     "identifiers": [{
         "identifier": "1fe2cdd0-7aad-11db-9fe1-0800200c9a66"
     }],
@@ -162,9 +162,9 @@ samples.valid_0 = [{
             }
         }
     }
-}];
+};
 
-samples.valid_1 = [{
+samples.valid_1 = {
     "policy": {
         "identifiers": [{
             "identifier": "3e676a50-7aac-11db-9fe1-0800200c9a66"
@@ -270,9 +270,9 @@ samples.valid_1 = [{
             }
         }
     }
-}];
+};
 
-samples.invalid_0 = [{
+samples.invalid_0 = {
     "policy": {
         "identifiers": [{
             "identifier": "3e676a50-7aac-11db-9fe1-0800200c9a66"
@@ -342,4 +342,4 @@ samples.invalid_0 = [{
             }
         }
     }]
-}];
+};
