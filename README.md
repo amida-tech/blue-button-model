@@ -33,7 +33,7 @@ if (!valid) {
 
 Primary method to validate Blue Button JSON documents.  
 
-__ARGUMENTS__
+__Arguments__
 
 * `document` - JSON health data document.
 * returns - `true` or `false`.
@@ -42,7 +42,7 @@ __ARGUMENTS__
 
 Validates individual components in the Blue Button document such as sections and entries.
 
-__ARGUMENTS__
+__Arguments__
 
 * `obj` - Component in the JSON health data document.
 * `schemaName` - Type of `obj`.  You can use `id` property of any schema avaiable in the [list](#schemaListMethod).
@@ -57,7 +57,7 @@ If validation fails this method returns the details of the errors.  The error ob
 
 Provides the list of raw schemas that are used in the model.  The list includes section schemas, entry schemas and common component schemas.  Document schema is also available with id `document_model`.
 
-__ARGUMENTS__
+__Arguments__
 
 * `expandCommon` - If this is falsy, common component (such as address, time, etc.) schemas are provided in an array.  
 * returns - List of schemas.
