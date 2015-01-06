@@ -1,55 +1,53 @@
 {
-  "name": "blue-button-model",
-  "version": "1.3.0",
-  "description": "Blue Button Model Validation",
-  "main": "/index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "test": "grunt mocha"
-  },
-  "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
-  "contributors": [
-    {
-      "name": "Matthew McCall",
-      "email": "matt@amida-tech.com"
+    "name": "blue-button-model",
+    "version": "1.4.0-beta.1",
+    "description": "Blue Button Model Validation",
+    "main": "/index.js",
+    "directories": {
+        "lib": "lib"
     },
-    {
-      "name": "Afsin Ustundag",
-      "email": "afsin.ustundag@us.pwc.com"
-    }
-  ],
-  "license": "Apache-2.0",
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "dependencies": {
-    "lodash": "~2.4.1",
-    "z-schema": "~3.1.2"
-  },
-  "devDependencies": {
-    "chai": "~1.10.0",
-    "coveralls": "~2.11.2",
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-coveralls": "~1.0.0",
-    "grunt-istanbul-coverage": "~0.1.0",
-    "grunt-jsbeautifier": "~0.2.7",
-    "grunt-mocha-test": "~0.12.4",
-    "mocha": "~2.0.1",
-    "mocha-lcov-reporter": "0.0.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/amida-tech/blue-button-model.git"
-  },
-  "keywords": [
-    "bluebutton,model"
-  ],
-  "bugs": {
-    "url": "https://github.com/amida-tech/blue-button-model/issues"
-  },
-  "homepage": "https://github.com/amida-tech/blue-button-model"
+    "scripts": {
+        "test": "grunt mocha",
+        "verify": "grunt"
+    },
+    "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
+    "contributors": [{
+        "name": "Matthew McCall",
+        "email": "matt@amida-tech.com"
+    }, {
+        "name": "Afsin Ustundag",
+        "email": "afsin.ustundag@us.pwc.com"
+    }],
+    "license": "Apache-2.0",
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "dependencies": {
+        "lodash": "~2.4.1",
+        "z-schema": "~3.1.2"
+    },
+    "devDependencies": {
+        "chai": "~1.10.0",
+        "coveralls": "~2.11.2",
+        "grunt": "~0.4.5",
+        "grunt-contrib-jshint": "~0.10.0",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt-coveralls": "~1.0.0",
+        "grunt-istanbul-coverage": "~0.1.0",
+        "grunt-jsbeautifier": "~0.2.7",
+        "grunt-mocha-test": "~0.12.4",
+        "mocha": "~2.0.1",
+        "mocha-lcov-reporter": "0.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/amida-tech/blue-button-model.git"
+    },
+    "keywords": [
+        "bluebutton", "blue-button", "model"
+    ],
+    "bugs": {
+        "url": "https://github.com/amida-tech/blue-button-model/issues"
+    },
+    "homepage": "https://github.com/amida-tech/blue-button-model"
 }

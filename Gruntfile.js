@@ -11,8 +11,9 @@ module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
+        alljsfiles: ['lib/**/*.js', 'test/**/*.js', 'Gruntfile.js', 'package.json', 'index.js'],
         jshint: {
-            files: ['*.js', './lib/*.js'],
+            files: '<%= alljsfiles%>',
             options: {
                 browser: true,
                 smarttabs: true,
@@ -40,19 +41,19 @@ module.exports = function (grunt) {
         },
         watch: {
             all: {
-                files: ['./lib/*.js', '*.js'],
+                files: '<%= alljsfiles%>',
                 tasks: ['default']
             }
         },
         jsbeautifier: {
             beautify: {
-                src: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js', '*.js', 'lib/schemas/*.json'],
+                src: '<%= alljsfiles%>',
                 options: {
                     config: '.jsbeautifyrc'
                 }
             },
             check: {
-                src: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js', '*.js', 'lib/schemas/*.json'],
+                src: '<%= alljsfiles%>',
                 options: {
                     mode: 'VERIFY_ONLY',
                     config: '.jsbeautifyrc'
