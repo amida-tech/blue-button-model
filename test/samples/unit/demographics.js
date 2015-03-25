@@ -41,7 +41,8 @@ samples.valid_0 = {
         "number": "(816)276-6909",
         "type": "primary home"
     }],
-    "race_ethnicity": "White",
+    "race": "White",
+    "ethnicity": "Hispanic or Latino",
     "languages": [{
         "language": "en",
         "preferred": true,
@@ -118,7 +119,7 @@ samples.invalid_0 = {
         "number": "(816)276-6909",
         "type": "primary home"
     }],
-    "race_ethnicity": "White",
+    "race": "White",
     "languages": [{
         "language": "en",
         "preferred": true,
@@ -153,4 +154,15 @@ samples.invalid_0 = {
             "type": "primary home"
         }]
     }]
+};
+
+samples.invalid_1 = {
+    "name": {
+        "middle": [
+            "Isa"
+        ],
+        "last": "Jones",
+        "first": "Isabella"
+    },
+    "race_ethnicity": "White"
 };
