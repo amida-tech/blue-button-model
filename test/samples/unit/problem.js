@@ -33,6 +33,12 @@ samples.valid_0 = {
                 "date": "2008-01-03T00:00:00Z",
                 "precision": "day"
             }
+        },
+        "severity": {
+            "code": {
+                "name": "Low",
+                "code": "L"
+            }
         }
     },
     "onset_age": "57",
