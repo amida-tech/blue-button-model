@@ -1,7 +1,8 @@
 # blue-button-model.js Release Notes
 
 # v.1.5.0 - TBD
-- demographics race and ethnicity are seperated
+- demographics race and ethnicity are separated
+- confidentiality explicitly added to meta
 
 # v.1.4.0 - February 27, 2015
 - problem.status is fixed
