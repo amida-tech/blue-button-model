@@ -1,6 +1,6 @@
 {
     "name": "blue-button-model",
-    "version": "1.5.0-beta.2",
+    "version": "1.5.0-beta.3",
     "description": "Blue Button Model Validation",
     "main": "/index.js",
     "directories": {
@@ -20,6 +20,9 @@
     }, {
         "name": "Jacob Sachs",
         "email": "jacob@amida-tech.com"
+    }, {
+        "name": "Matt Martz",
+        "email": "matt.martz@amida-tech.com"
     }],
     "license": "Apache-2.0",
     "engines": {
