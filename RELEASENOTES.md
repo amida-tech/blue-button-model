@@ -1,7 +1,6 @@
 # blue-button-model.js Release Notes
 
 # v.1.5.0 - TBD
-<<<<<<< HEAD
 - confidentiality explicitly added to meta
 - demographics race and ethnicity are separated
 - add problem.problem.severity
