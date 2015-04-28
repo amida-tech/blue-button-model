@@ -46,6 +46,7 @@ describe('procedure unit tests', function () {
         var valid = bbm.validator.validate(samples.invalid_2, 'procedure');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
+        console.log("Martz: " + JSON.stringify(result));
         expect(result).to.have.length(2);
         var c2p = util.errorsToCodePathMap(result);
         expect(c2p.OBJECT_ADDITIONAL_PROPERTIES).to.have.length(1);
