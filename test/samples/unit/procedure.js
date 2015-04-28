@@ -109,8 +109,7 @@ samples.invalid_0 = {
             "name": "colonic polyp sample",
             "code": "309226005",
             "code_system_name": "SNOMED CT"
-        },
-        "type": "liquid"
+        }
     },
     "procedure_type": "observation"
 };
