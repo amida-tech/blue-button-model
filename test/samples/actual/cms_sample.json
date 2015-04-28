@@ -688,7 +688,7 @@
                                                                       "code": "1",
                                                                       "name": "Medical Care"
                                                             },
-                                                            "performer": [
+                                                            "performers": [
                                                                       {
                                                                                 "type": "rendering provider",
                                                                                 "identifiers": [
@@ -895,7 +895,7 @@
                                                                       "code": "1",
                                                                       "name": "Medical Care"
                                                             },
-                                                            "performer": [
+                                                            "performers": [
                                                                       {
                                                                                 "type": "rendering provider",
                                                                                 "identifiers": [
@@ -941,7 +941,7 @@
                                                                       "code": "1",
                                                                       "name": "Medical Care"
                                                             },
-                                                            "performer": [
+                                                            "performers": [
                                                                       {
                                                                                 "type": "rendering provider",
                                                                                 "identifiers": [
@@ -991,7 +991,7 @@
                                                                       "code": "00093013505",
                                                                       "name": "CARVEDILOL"
                                                             },
-                                                            "performer": [
+                                                            "performers": [
                                                                       {
                                                                                 "identifiers": [
                                                                                           {
@@ -1022,7 +1022,7 @@
                                                             ]
                                                   }
                                         ],
-                                        "performer": [
+                                        "performers": [
                                                   {
                                                             "identifiers": [
                                                                       {
@@ -1078,7 +1078,7 @@
                                                                       "code": "00781223310",
                                                                       "name": "OMEPRAZOLE"
                                                             },
-                                                            "performer": [
+                                                            "performers": [
                                                                       {
                                                                                 "identifiers": [
                                                                                           {
@@ -1109,7 +1109,7 @@
                                                             ]
                                                   }
                                         ],
-                                        "performer": [
+                                        "performers": [
                                                   {
                                                             "identifiers": [
                                                                       {

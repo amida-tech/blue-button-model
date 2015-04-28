@@ -35,7 +35,7 @@ samples.valid_0 = {
             "code_system_name": "SNOMED CT"
         }
     },
-    "performer": [{
+    "performers": [{
         "identifiers": [{
             "identifier": "2.16.840.1.113883.19.5.9999.456",
             "extension": "2981823"

@@ -56,7 +56,7 @@ samples.valid_0 = {
             "code": "1",
             "name": "Medical Care"
         },
-        "performer": [{
+        "performers": [{
             "type": "rendering provider",
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.4.6",
