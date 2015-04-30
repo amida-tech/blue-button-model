@@ -7,6 +7,7 @@ Blue Button Model Definition and Validation
 
 [![Build Status](https://travis-ci.org/amida-tech/blue-button-model.svg)](https://travis-ci.org/amida-tech/blue-button-model)
 [![Coverage Status](https://coveralls.io/repos/amida-tech/blue-button-model/badge.png)](https://coveralls.io/r/amida-tech/blue-button-model)
+[![Dependency Status](https://david-dm.org/amida-tech/blue-button-model.svg)](https://david-dm.org/amida-tech/blue-button-model)
 
 This library defines a JSON Blue Button health data model. All parsers in [blue-button](https://github.com/amida-tech/blue-button) library generate data that follow this model.  The schema can be found [here](http://developers.amida-tech.com/document_model.html) or programmatically [here](#schemaListMethod).  The implementation uses [z-schema](https://github.com/zaggino/z-schema).
 
