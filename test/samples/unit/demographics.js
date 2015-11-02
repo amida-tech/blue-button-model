@@ -14,11 +14,15 @@ samples.valid_0 = {
     },
     "dob": {
         "point": {
-            "date": "1975-05-01T00:00:00Z",
+            "date": "1975-05-01T00:00:00.000Z",
             "precision": "day"
         }
     },
-    "gender": "Female",
+    "gender": {
+        "name": "Female",
+        "code": "F",
+        "code_system_name": "HL7 AdministrativeGender"
+    },
     "identifiers": [{
         "identifier": "2.16.840.1.113883.19.5.99999.2",
         "extension": "998991"
@@ -26,7 +30,11 @@ samples.valid_0 = {
         "identifier": "2.16.840.1.113883.4.1",
         "extension": "111-00-2330"
     }],
-    "marital_status": "Married",
+    "marital_status": {
+        "name": "Married",
+        "code": "M",
+        "code_system_name": "HL7 Marital Status"
+    },
     "addresses": [{
         "street_lines": [
             "1357 Amber Drive"
@@ -41,15 +49,37 @@ samples.valid_0 = {
         "number": "(816)276-6909",
         "type": "primary home"
     }],
-    "race": "White",
-    "ethnicity": "Hispanic or Latino",
+    "race": {
+        "name": "White",
+        "code": "2106-3",
+        "code_system_name": "Race and Ethnicity - CDC"
+    },
+    "ethnicity": {
+        "name": "Not Hispanic or Latino",
+        "code": "2186-5",
+        "code_system_name": "Race and Ethnicity - CDC"
+    },
     "languages": [{
-        "language": "en",
+        "language": {
+            "code": "en"
+        },
         "preferred": true,
-        "mode": "Expressed spoken",
-        "proficiency": "Good"
+        "mode": {
+            "name": "Expressed spoken",
+            "code": "ESP",
+            "code_system_name": "LanguageAbilityMode"
+        },
+        "proficiency": {
+            "name": "Good",
+            "code": "G",
+            "code_system_name": "LanguageAbilityProficiency"
+        }
     }],
-    "religion": "Christian (non-Catholic, non-specific)",
+    "religion": {
+        "name": "Christian (non-Catholic, non-specific)",
+        "code": "1013",
+        "code_system_name": "HL7 Religious Affiliation"
+    },
     "birthplace": {
         "city": "Beaverton",
         "state": "OR",
@@ -57,7 +87,11 @@ samples.valid_0 = {
         "country": "US"
     },
     "guardians": [{
-        "relation": "Parent",
+        "relation": {
+            "name": "Parent",
+            "code": "PRN",
+            "code_system_name": "HL7 Role"
+        },
         "addresses": [{
             "street_lines": [
                 "1357 Amber Drive"

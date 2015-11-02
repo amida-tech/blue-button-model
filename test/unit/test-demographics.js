@@ -24,11 +24,11 @@ describe('demographics unit tests', function () {
         var valid = bbm.validator.validate(samples.invalid_0, 'demographics');
         expect(valid).to.be.false;
         var result = bbm.validator.getLastError();
-        expect(result).to.have.length(3);
+        expect(result).to.have.length(10);
         var c2p = util.errorsToCodePathMap(result);
         expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY).to.have.length(1);
         expect(c2p.OBJECT_MISSING_REQUIRED_PROPERTY[0]).to.equal("#/");
-        expect(c2p.INVALID_TYPE).to.have.length(2);
-        expect(c2p.INVALID_TYPE).to.deep.equal(["#/gender", "#/guardians/0/names"]);
+        expect(c2p.INVALID_TYPE).to.have.length(9);
+        expect(c2p.INVALID_TYPE).to.deep.equal(["#/gender", "#/guardians/0/names", "#/guardians/0/relation", "#/languages/0/language", "#/languages/0/mode", "#/languages/0/proficiency", "#/marital_status", "#/race", "#/religion"]);
     });
 });
