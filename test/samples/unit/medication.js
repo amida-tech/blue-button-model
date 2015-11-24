@@ -55,6 +55,13 @@ samples.valid_0 = {
                 "last": "Seven",
                 "first": "Henry"
             }
+        },
+        "instructions": {
+            "code": {
+                "code": "171044003",
+                "code_system_name": "2.16.840.1.113883.6.96",
+                "name": "immunization education"
+            }
         }
     },
     "administration": {
