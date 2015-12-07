@@ -62,7 +62,24 @@ samples.valid_0 = {
                 "code_system_name": "2.16.840.1.113883.6.96",
                 "name": "immunization education"
             }
-        }
+        },
+        "product": {
+            "identifiers": [{
+                "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+            }],
+            "unencoded_name": "Proventil HFA",
+            "product": {
+                "name": "Proventil HFA",
+                "code": "219483",
+                "translations": [{
+                    "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
+                    "code": "573621",
+                    "code_system_name": "RXNORM"
+                }],
+                "code_system_name": "RXNORM"
+            },
+            "manufacturer": "Medication Factory Inc."
+        },
     },
     "administration": {
         "route": {
@@ -166,7 +183,24 @@ samples.valid_0 = {
                     "Community Health and Hospitals"
                 ]
             }]
-        }
+        },
+        "product": {
+            "identifiers": [{
+                "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+            }],
+            "unencoded_name": "Proventil HFA",
+            "product": {
+                "name": "Proventil HFA",
+                "code": "219483",
+                "translations": [{
+                    "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
+                    "code": "573621",
+                    "code_system_name": "RXNORM"
+                }],
+                "code_system_name": "RXNORM"
+            },
+            "manufacturer": "Medication Factory Inc."
+        },
     }
 };
 
