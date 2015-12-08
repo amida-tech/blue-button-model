@@ -62,7 +62,7 @@ samples.valid_0 = {
                 "code_system_name": "2.16.840.1.113883.6.96",
                 "name": "immunization education"
             },
-            "text": "Possible flu-like symptoms for three days."
+            "free_text": "Possible flu-like symptoms for three days."
         },
         "product": {
             "identifiers": [{
