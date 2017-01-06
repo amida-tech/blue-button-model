@@ -32,11 +32,11 @@ samples.valid_0 = {
         "reference_range": {
             "range": "M 13-18 g/dl; F 12-16 g/dl"
         },
-        "interpretations": [
-            {"name": "Normal",
-                    "code": "N/A",
-                    "code_system_name": "N/A"}
-        ],
+        "interpretations": [{
+            "name": "Normal",
+            "code": "N/A",
+            "code_system_name": "N/A"
+        }],
         "value": 13.2,
         "unit": "g/dl"
     }, {
@@ -60,11 +60,11 @@ samples.valid_0 = {
             "high": "10.8",
             "unit": "10+3/ul"
         },
-        "interpretations": [
-            {"name": "Normal",
-                    "code": "N/A",
-                    "code_system_name": "N/A"}
-        ],
+        "interpretations": [{
+            "name": "Normal",
+            "code": "N/A",
+            "code_system_name": "N/A"
+        }],
         "value": 6.7,
         "unit": "10+3/ul"
     }, {
@@ -88,11 +88,11 @@ samples.valid_0 = {
             "high": "350",
             "unit": "10+3/ul"
         },
-        "interpretations": [
-            {"name": "Low",
-                    "code": "N/A",
-                    "code_system_name": "N/A"}
-        ],
+        "interpretations": [{
+            "name": "Low",
+            "code": "N/A",
+            "code_system_name": "N/A"
+        }],
         "value": 123,
         "unit": "10+3/ul"
     }]
