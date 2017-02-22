@@ -1,6 +1,6 @@
 {
     "name": "blue-button-model",
-    "version": "1.9.1-beta.6",
+    "version": "1.10.0",
     "description": "Blue Button Model Validation",
     "main": "/index.js",
     "directories": {
