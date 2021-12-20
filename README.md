@@ -11,6 +11,25 @@ Blue Button Model Definition and Validation
 
 This library defines a JSON Blue Button health data model. All parsers in [blue-button](https://github.com/amida-tech/blue-button) library generate data that follow this model.  The schema can be found [here](http://developers.amida-tech.com/document_model.html) or programmatically [here](#schemaListMethod).  The implementation uses [z-schema](https://github.com/zaggino/z-schema).
 
+## Quick up and running quide
+
+### Prerequisites
+
+- Node.js (v0.10+) and NPM
+- Grunt.js
+
+```
+# Install dependencies
+npm i
+
+# Install grunt
+npm i -g grunt
+
+# Test
+grunt
+
+```
+
 ## Usage
 
 ``` javascript
@@ -23,7 +42,7 @@ var record = bb.parseString(xmlString);
 
 var valid = bbm.validator.validateDocumentModel(record);
 if (!valid) {
-	var error = bbm.validator.getLastError();
+  var error = bbm.validator.getLastError();
     console.log(error);
 }
 ```
@@ -32,7 +51,7 @@ if (!valid) {
 
 ### validator.validateDocumentModel(document)
 
-Primary method to validate Blue Button JSON documents.  
+Primary method to validate Blue Button JSON documents.
 
 __Arguments__
 
@@ -47,7 +66,7 @@ __Arguments__
 
 * `obj` - Component in the JSON health data document.
 * `schemaName` - Type of `obj`.  You can use `id` property of any schema avaiable in the [list](#schemaListMethod).
-* returns - `true` or `false`. 
+* returns - `true` or `false`.
 
 ### validator.getLastError()
 
@@ -60,7 +79,7 @@ Provides the list of schemas that are used in the model.  The list includes sect
 
 __Arguments__
 
-* `expandCommon` - If this is falsy, common component (such as address, time, etc.) schemas are provided in an array.  
+* `expandCommon` - If this is falsy, common component (such as address, time, etc.) schemas are provided in an array.
 * returns - List of schemas.
 
 ### schemas.map(expandCommon)
