@@ -2,7 +2,7 @@
     "name": "blue-button-model",
     "version": "1.10.1",
     "description": "Blue Button Model Validation",
-    "main": "/index.js",
+    "main": "index.js",
     "directories": {
         "lib": "lib"
     },
