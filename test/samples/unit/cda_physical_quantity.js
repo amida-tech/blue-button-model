@@ -5,22 +5,22 @@ var samples = {};
 module.exports = samples;
 
 samples.valid_0 = {
-    "value": 90,
-    "unit": "ml/min"
+  "value": 90,
+  "unit": "ml/min"
 };
 
 samples.invalid_0 = {};
 
 samples.invalid_1 = {
-    "value": 90
+  "value": 90
 };
 
 samples.invalid_2 = {
-    "unit": "ml/min"
+  "unit": "ml/min"
 };
 
 samples.invalid_3 = {
-    "value": 90,
-    "unit": "ml/min",
-    "other": "na"
+  "value": 90,
+  "unit": "ml/min",
+  "other": "na"
 };

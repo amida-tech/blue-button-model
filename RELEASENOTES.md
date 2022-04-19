@@ -1,6 +1,11 @@
-# blue-button-model.js Release Notes
+# blue-button-model Release Notes
 
-# v1.10.1 - December 20, 2021
+## v1.10.2 - April 18, 2022
+
+- Patch Update: Upgraded dev dependencies
+- Converted tests and coverages to jest
+
+## v1.10.1 - December 20, 2021
 
 - Added:
   - medication supply instructions
@@ -15,16 +20,16 @@
 - Updated result interpretation to coded entry type
 - Security fixes to dev dependencies.
 
-# v.1.5.0 - June 12, 2015
+## v.1.5.0 - June 12, 2015
 - confidentiality explicitly added to meta
 - demographics race and ethnicity are separated
 - add problem.problem.severity
 - performer and performers are now consistent as object or array
 
-# v.1.4.0 - February 27, 2015
+## v.1.4.0 - February 27, 2015
 - problem.status is fixed
 
-# v.1.3.0 - December 12, 2014
+## v.1.3.0 - December 12, 2014
 - Seperated from blue-button repository.
 - Updated to use z-schema version 3.1.
 - Added API method to validate individual components (sections, entries, shared components).

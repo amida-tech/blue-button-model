@@ -1,4 +1,4 @@
-blue-button-model
+Blue Button Model
 =================
 
 Blue Button Model Definition and Validation
@@ -7,7 +7,6 @@ Blue Button Model Definition and Validation
 
 [![Build Status](https://travis-ci.org/amida-tech/blue-button-model.svg)](https://travis-ci.org/amida-tech/blue-button-model)
 [![Coverage Status](https://coveralls.io/repos/amida-tech/blue-button-model/badge.png)](https://coveralls.io/r/amida-tech/blue-button-model)
-[![Dependency Status](https://david-dm.org/amida-tech/blue-button-model.svg)](https://david-dm.org/amida-tech/blue-button-model)
 
 This library defines a JSON Blue Button health data model. All parsers in [blue-button](https://github.com/amida-tech/blue-button) library generate data that follow this model.  The schema can be found [here](http://developers.amida-tech.com/document_model.html) or programmatically [here](#schemaListMethod).  The implementation uses [z-schema](https://github.com/zaggino/z-schema).
 
@@ -15,7 +14,7 @@ This library defines a JSON Blue Button health data model. All parsers in [blue-
 
 ### Prerequisites
 
-- Node.js (v0.10+) and NPM
+- Node.js (v14.19+) and NPM
 - Grunt.js
 
 ```
@@ -72,7 +71,6 @@ __Arguments__
 
 If validation fails this method returns the details of the errors.  The error object is actually an array of errors and directly provided by the underlying library [z-schema](https://github.com/zaggino/z-schema).
 
-<a name="schemaListMethod" />
 ### schemas.list(expandCommon)
 
 Provides the list of schemas that are used in the model.  The list includes section schemas, entry schemas and common component schemas.  Full document schema is also available with id `document_model`.

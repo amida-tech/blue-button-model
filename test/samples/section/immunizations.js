@@ -7,12 +7,12 @@ var samples = {};
 module.exports = samples;
 
 samples.valid_0 = [
-    immunization.valid_0,
-    immunization.valid_1
+  immunization.valid_0,
+  immunization.valid_1
 ];
 
 samples.invalid_0 = [
-    immunization.invalid_0,
-    immunization.valid_0,
-    immunization.valid_1
+  immunization.invalid_0,
+  immunization.valid_0,
+  immunization.valid_1
 ];

@@ -7,12 +7,12 @@ var samples = {};
 module.exports = samples;
 
 samples.valid_0 = [
-    encounter.valid_0,
-    encounter.valid_1
+  encounter.valid_0,
+  encounter.valid_1
 ];
 
 samples.invalid_0 = [
-    encounter.valid_0,
-    encounter.invalid_0,
-    encounter.valid_1
+  encounter.valid_0,
+  encounter.invalid_0,
+  encounter.valid_1
 ];

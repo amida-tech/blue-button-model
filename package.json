@@ -1,73 +1,69 @@
 {
-    "name": "blue-button-model",
-    "version": "1.10.1",
-    "description": "Blue Button Model Validation",
-    "main": "index.js",
-    "directories": {
-        "lib": "lib"
+  "name": "@amida-tech/blue-button-model",
+  "version": "1.10.2",
+  "description": "Blue Button Model Validation",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
+  "contributors": [
+    {
+      "name": "Matthew McCall",
+      "email": "matt@amida-tech.com"
     },
-    "scripts": {
-        "test": "grunt mocha",
-        "verify": "grunt"
+    {
+      "name": "Afsin Ustundag",
+      "email": "afsin.ustundag@us.pwc.com"
     },
-    "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
-    "contributors": [{
-            "name": "Matthew McCall",
-            "email": "matt@amida-tech.com"
-        },
-        {
-            "name": "Afsin Ustundag",
-            "email": "afsin.ustundag@us.pwc.com"
-        },
-        {
-            "name": "Jacob Sachs",
-            "email": "jacob@amida-tech.com"
-        },
-        {
-            "name": "Matt Martz",
-            "email": "matt.martz@amida-tech.com"
-        },
-        {
-            "name": "Christopher Best",
-            "email": "bestchris@gmail.com"
-        },
-        {
-            "name": "Marc Sylvestre",
-            "email": "marc.sylvestre@manhydra.com"
-        }
-    ],
-    "license": "Apache-2.0",
-    "engines": {
-        "node": ">= 0.10.0"
+    {
+      "name": "Jacob Sachs",
+      "email": "jacob@amida-tech.com"
     },
-    "dependencies": {
-        "lodash": "~4.17.21",
-        "z-schema": "~5.0.2"
+    {
+      "name": "Matt Martz",
+      "email": "matt.martz@amida-tech.com"
     },
-    "devDependencies": {
-        "chai": "~4.3.4",
-        "coveralls": "~3.1.1",
-        "grunt": "~1.4.1",
-        "grunt-contrib-jshint": "~3.1.1",
-        "grunt-contrib-watch": "~1.1.0",
-        "grunt-coveralls": "~2.0.0",
-        "grunt-istanbul-coverage": "~0.1.4",
-        "grunt-jsbeautifier": "~0.2.13",
-        "grunt-mocha-test": "~0.13.3",
-        "mocha": "~9.1.3",
-        "mocha-lcov-reporter": "~1.3.0"
+    {
+      "name": "Christopher Best",
+      "email": "bestchris@gmail.com"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/amida-tech/blue-button-model.git"
-    },
-    "keywords": [
-        "bluebutton",
-        "blue-button",
-        "model"
-    ],
-    "bugs": {
-        "url": "https://github.com/amida-tech/blue-button-model/issues"
-    },
-    "homepage": "https://github.com/amida-tech/blue-button-model"
+    {
+      "name": "Marc Sylvestre",
+      "email": "marc.sylvestre@manhydra.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 14.19.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "z-schema": "^5.0.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.5.2",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-jsbeautifier": "^0.2.13",
+    "grunt-run": "^0.8.1",
+    "jest": "^27.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amida-tech/blue-button-model.git"
+  },
+  "keywords": [
+    "bluebutton",
+    "blue-button",
+    "model"
+  ],
+  "bugs": {
+    "url": "https://github.com/amida-tech/blue-button-model/issues"
+  },
+  "homepage": "https://github.com/amida-tech/blue-button-model"
 }
