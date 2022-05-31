@@ -60,13 +60,14 @@ module.exports = function (grunt) {
       }
     },
     run: {
-      jest: {
+      test: {
         exec: 'npx jest'
       }
     }
   });
 
-  grunt.registerTask('default', ['beautify', 'jshint', 'run']);
+  grunt.registerTask('default', ['beautify', 'jshint', 'test']);
+  grunt.registerTask('test', ['run:test']);
   grunt.registerTask('beautify', ['jsbeautifier:beautify']);
   grunt.registerTask('commit', ['default']);
   grunt.registerTask('timestamp', function () {

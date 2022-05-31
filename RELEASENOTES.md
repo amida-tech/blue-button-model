@@ -1,5 +1,9 @@
 # blue-button-model Release Notes
 
+## v1.10.3 - May 31, 2022
+
+- Patch Update: GHSA-rm36-94g8-835r - Race Condition in Grunt
+
 ## v1.10.2 - April 18, 2022
 
 - Patch Update: Upgraded dev dependencies

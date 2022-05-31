@@ -33,8 +33,8 @@ grunt
 
 ``` javascript
 var fs = require('fs');
-var bb = require('blue-button');
-bar bbm = require('blue-button-model');
+var bb = require('@amida-tech/blue-button');
+bar bbm = require('@amida-tech/blue-button-model');
 
 var xmlString = fs.readFileSync('CCD_1.xml', 'utf-8');
 var record = bb.parseString(xmlString);
