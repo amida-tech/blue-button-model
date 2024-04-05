@@ -11,12 +11,6 @@ pipeline {
         sh 'node --version'
       }
     }
-    stage('Setup') {
-      steps {
-        echo 'Cloning repo...'
-        git branch: 'OSI-44-routine-maintenance', url: 'https://github.com/amida-tech/blue-button-model.git'
-      }
-    }
     stage('Build') {
       steps {
         echo 'Installing dependencies...'
